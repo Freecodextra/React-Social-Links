@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.App {
+    flex-direction: column;
+}
+.App > a {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+.App > a > img {
+    width: 20px;
+}
+.profile {
+    flex-direction: column;
+    text-align: center;
+}
+.profile .image {
+    width: 100px;
+    height: 100px;
+}
+.profile .image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile .text {
+    margin-top: 15px;
+}
+.profile .text p {
+    font-size: 19px;
+    font-weight: bold;
+}
+.links {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    margin: 50px 0;
+    width: 100%;
+}
+.links a {
+    text-decoration: none;
+    background-color: #eeeeee;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 16px 25vw;
+    transition: all ease .5s;
+}
+.links a:hover {
+    background-color: #ddd;
+}
+.footer a {
+    width: 30px;
+    margin: 14px;
+}
+.footer a img {
+    width: inherit;
+}
